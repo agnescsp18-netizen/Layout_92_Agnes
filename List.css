@@ -12,6 +12,25 @@
     display: block;
 }
 
+h2{
+    width: 100%;                
+    display: block;             
+    background-color: #b5d6fb; 
+    color: #0b2557;            
+    text-align: center;         
+    
+    height: auto;               
+    padding: 2px 2px;            
+    line-height: normal;        
+    
+    border: 3px solid #0f1961;  
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;       
+    margin: 20px 0;            
+}
+
 ol{
     background-color:beige;
     border: 2px solid rgb(255, 172, 39);
