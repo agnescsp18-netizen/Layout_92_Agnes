@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruger National Park</title>
+    <!-- Hubungkan CSS utama dan CSS khusus wisata -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="wisatastyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- membuat header -->
+         <div class="header">
+            <img src="WEBSITE.png" alt="Foto Header" class="header-img">
+         </div>
+
+<!-- navbar utama -->
+<div class="topnav">
+    <a href="index.html"> Biodata </a>
+    <a href="table.html"> Table</a>
+    <a href=""> List </a>
+    <a href="wisata.html"> STS </a>
+</div>
+
+<!-- navbar sts -->
+<header>
+    <input type="checkbox" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">safari<span>.</span></a>
+    
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#trips">trips</a>
+    </nav>
+
+    <div class="icons">
+        <label for="wishlist-toggle" class="fas fa-bookmark"></label>
+        <a href="#about-creator" class="fas fa-user" title="About Creator"></a>
+    </div>
+</header>
+ 
+<!-- sidebar utk wishlist-->
+
+<input type="checkbox" id="wishlist-toggle" hidden>
+    <div class="wishlist-sidebar">
+        <div class="wishlist-header">
+            <h3>My Wishlist</h3>
+            <label for="wishlist-toggle" class="fas fa-times"></label>
+        </div>
+        <div class="wishlist-content">
+            <p>Your wishlist is currently empty.</p>
+        </div>
+    </div>
+
+<!-- home section mulai -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>KRUGER NATIONAL PARK</h3>
+            <span>Explore The Real Wild Life</span>
+            <p>Experience the ultimate African wilderness. Discover incredible landscapes and majestic wildlife in their natural habitat!</p>
+            <a href="#trips" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+<!-- home section selesai -->
+
+<!-- about section mulai -->
+
+    <section class="about" id="about">
+    <h1 class="heading"> <span>about</span> kruger national park </h1>
+
+    <div class="about-container">
+
+        <div class="about-block image-left">
+            <div class="about-image">
+                <img src="history.jpg" alt="Historical Kruger Safari">
+                <span class="caption">Established Heritage</span>
+            </div>
+            <div class="about-text">
+
+                <h3>1. The Historic Beginnings</h3>
+                <p class="indented-p">
+                    Established over a century ago, Kruger National Park stands as one of Africa's largest and most iconic game reserves. Highlighting an extraordinary density of wild animals, including the legendary Big Five—lions, leopards, elephants, rhinos, and buffalos—it offers an unprecedented glimpse into untouched ecosystems. Our expedition team was born out of a passionate commitment to conservation, historical preservation, and sustainable eco-tourism.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-block image-right">
+            <div class="about-image">
+                <img src="protect.jpg" alt="Wildlife Conservation">
+                <span class="caption">Protection & Care</span>
+            </div>
+            <div class="about-text">
+                <h3>2. Sanctuary & Conservation</h3>
+                <p class="indented-p">
+                    Protecting biodiversity is the heart of our daily operations across the savanna. Over the decades, rigorous anti-poaching initiatives and scientific habitat management have allowed endangered species to flourish within protected boundaries. By joining our guided expeditions, guests directly contribute to ongoing community educational programs and vital wildlife veterinary projects.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-block image-left">
+            <div class="about-image">
+                <img src="big5.jpg" alt="Tracking Big Five">
+                <span class="caption">Unrivaled Expeditions</span>
+            </div>
+            <div class="about-text">
+                <h3>3. Tracking The Big Five</h3>
+                <p class="indented-p">
+                    Stepping into this vast wilderness feels like traveling back in time. Every sunrise over the golden savanna brings a fresh chapter of raw wildlife encounters and breathtaking natural landscapes. Through generations of guiding explorers, photo crews, and nature enthusiasts across rugged terrains, we have refined the art of tracking animals while honoring their natural sanctuary borders.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-block image-right">
+            <div class="about-image">
+                <img src="guide.jpg" alt="Ranger Guide Experience">
+                <span class="caption">Expert Guidance</span>
+            </div>
+            <div class="about-text">
+                <h3>4. Lore & Ranger Wisdom</h3>
+                <p class="indented-p">
+                    Whether you are navigating through dense bushveld or pausing near tranquil riverbanks, our experienced rangers share deep historical insights and native lore. Journeys through Kruger are not merely sightseeing vacations; they are immersive educational pilgrimages designed to foster a lifelong reverence for wildlife conservation and environmental harmony.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- luck test-->
+    <div class="luck-test-container">
+        <h3>Test Your Luck: Big Five Encounter Rate</h3>
+        <p>In the wild, sightings are never guaranteed! Click to reveal your safari luck today:</p>
+        
+        <details class="luck-accordion">
+            <summary class="luck-btn">Tap to Reveal Your Safari Encounter Rate!</summary>
+            <div class="luck-result">
+                <i class="fas fa-paw"></i>
+                <h4>Rare Big Five Sighting!</h4>
+                <p>You have an extraordinary <strong>85% Chance</strong> of encountering all Big Five species on your journey today! </p>
+            </div>
+        </details>
+    </div>
+
+    <div class="big-five-section">
+    <h3>Meet The Big Five!</h3>
+
+    <div class="carousel">
+        <!-- group 1 -->
+        <div class="group">
+            <div class="card">
+                <img src="lion.jpg" alt="African Lion">
+                <h4>African Lion</h4>
+                <p class="card-desc">The undisputed king of the savannah, known for its majestic mane and powerful roar.</p>
+            </div>
+            <div class="card">
+                <img src="leopard.jpg" alt="African Leopard">
+                <h4>African Leopard</h4>
+                <p class="card-desc">The elusive master of stealth and camouflage, capable of hauling heavy prey up trees.</p>
+            </div>
+            <div class="card">
+                <img src="elephant.jpg" alt="African Elephant">
+                <h4>African Elephant</h4>
+                <p class="card-desc">Gentle giants roaming in ancient herds, vital for maintaining savannah ecosystems.</p>
+            </div>
+            <div class="card">
+                <img src="rhino.jpg" alt="White Rhino">
+                <h4>White Rhino</h4>
+                <p class="card-desc">Powerful and armored guardians of the land with impressive prominent horns.</p>
+            </div> 
+            <div class="card">
+                <img src="buffalo.jpg" alt="Cape Buffalo">
+                <h4>Cape Buffalo</h4>
+                <p class="card-desc">Unpredictable and formidable wilderness icons, renowned for their strength and group defense.</p>
+            </div>
+        </div>
+
+        <!-- group 2 -->
+        <div aria-hidden="true" class="group">
+            <div class="card">
+                <img src="lion.jpg" alt="African Lion">
+                <h4>African Lion</h4>
+                <p class="card-desc">The undisputed king of the savannah, known for its majestic mane and powerful roar.</p>
+            </div>
+            <div class="card">
+                <img src="leopard.jpg" alt="African Leopard">
+                <h4>African Leopard</h4>
+                <p class="card-desc">The elusive master of stealth and camouflage, capable of hauling heavy prey up trees.</p>
+            </div>
+            <div class="card">
+                <img src="elephant.jpg" alt="African Elephant">
+                <h4>African Elephant</h4>
+                <p class="card-desc">Gentle giants roaming in ancient herds, vital for maintaining savannah ecosystems.</p>
+            </div>
+            <div class="card">
+                <img src="rhino.jpg" alt="White Rhino">
+                <h4>White Rhino</h4>
+                <p class="card-desc">Powerful and armored guardians of the land with impressive prominent horns.</p>
+            </div> 
+            <div class="card">
+                <img src="buffalo.jpg" alt="Cape Buffalo">
+                <h4>Cape Buffalo</h4>
+                <p class="card-desc">Unpredictable and formidable wilderness icons, renowned for their strength and group defense.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- About Section Ends -->
+
+<!-- trips section starts -->
+
+<section class="trips" id="trips">
+    <h1 class="heading"> featured <span>trips</span> </h1>
+
+    <div class="box-container">
+
+        <!-- Trip 1 -->
+        <div class="box">
+            <div class="image">
+                <img src="getaway.jpg" alt="3-Day Quick Kruger Getaway">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Quick Kruger Getaway</h3>
+                <div class="price"> Rp 14.500.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This 3 Day Quick Kruger Getaway Safari is ideal for those who are short on time but want a quality Kruger National Park safari experience with some extra sightseeing and an elephant interaction en route. Private guided full day safari in Kruger Park and guided scenic Panorama Route tour included. </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 2 -->
+        <div class="box">
+            <div class="image">
+                <img src="magmom.jpg" alt="3-Day Magical Moments Safari">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Magical Moments Safari</h3>
+                <div class="price"> Rp 16.200.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This Kruger Park safari package includes 2 nights at a luxury safari lodge inside the Kruger National Park. Indulge in a safari experience of a bygone era in one of Africa's legendary places, where wildlife is plentiful, and people are few.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 3 -->
+        <div class="box">
+            <div class="image">
+                <img src="tranquil.jpg" alt="3-Day Tranquil Kruger Haven">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Tranquil Kruger Haven</h3>
+                <div class="price"> Rp 15.800.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This 3-Day Tranquil Kruger Haven Safari is the perfect packaged safari for those looking to unwind in Kruger Park. Relax on a lounger overlooking a waterhole and enjoy fantastic game viewing without any effort and embark on leisurely game drives in search of the Big Five.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 4 -->
+        <div class="box">
+            <div class="image">
+                <img src="hotel.jpg" alt="4-Day Scenic Hotel Safari">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>4-Day Scenic Hotel Safari</h3>
+                <div class="price"> Rp 19.500.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>Enjoy a 4-Day Scenic Hotel Safari in Kruger with comfy hotel stays and Blyde River Canyon views. This 4-day Scenic Hotel Safari in Kruger with Panorama Route Tour is ideal if you who want to stay in a hotel-type setting but still want to do a guided Kruger Park wildlife safari and day tour of the Panorama Route.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 5 -->
+        <div class="box">
+            <div class="image">
+                <img src="walk.jpg" alt="4-Day Kruger Walking Safari">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>4-Day Kruger Walking Safari</h3>
+                <div class="price"> Rp 21.000.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>A walking safari in the Kruger National Park with an experienced guide is one of the most sought-after activities in Africa. Game drives in open safari vehicle combined with bush walks make this a unique Kruger Park safari experience. Not only do you get the Big Five safari experience but you also get to understand the rhythm of the Kruger on informative, leisurely paced walks.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 6 -->
+        <div class="box">
+            <div class="image">
+                <img src="tentcvoyage.jpg" alt="3-Day Tented Safari Voyage">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Tented Safari Voyage</h3>
+                <div class="price"> Rp 13.900.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This 3-day affordable packaged Kruger Park Safari will be a balm for your soul. Wilderness, solitude and tranquillity in the rugged beauty of the Kruger National Park. Spot the Big 5 on thrilling game drives that finish with sundowner drinks in the bush.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 7 -->
+        <div class="box">
+            <div class="image">
+                <img src="wildex.jpg" alt="3-Day Kruger Wild Explorer">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Kruger Wild Explorer</h3>
+                <div class="price"> Rp 16.800.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>Take in the splendour and silence of the South African bush on a professionally guided walking safari on this Kruger Park vacation package. Enjoy exciting morning and evening game drives and elegant living at an intimate and secluded lodge with views over the Mpanamana River.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 8 -->
+        <div class="box">
+            <div class="image">
+                <img src="ecofly.jpg" alt="3-Day Eco-Friendly Safari">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>3-Day Eco-Friendly Safari</h3>
+                <div class="price"> Rp 17.500.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This 3-day environmentally-friendly safari package includes a stay at an eco Kruger Park Safari Lodge ensuring your footprint is limited. Embark on twice-daily game drives in open 4x4 safari vehicles, both on private gravel concession roads and Kruger National Park roads.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 9 -->
+        <div class="box">
+            <div class="image">
+                <img src="serene.jpg" alt="4-Day Serene Safari Pause">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>4-Day Serene Safari Pause</h3>
+                <div class="price"> Rp 22.000.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>Looking to get away from it all and re-connect with your loved one? Take a moment and escape the crowds and relax in the African bush. Take a moment and spend 4 days on a relaxing Kruger Safari. Pamper yourself at a spectacular bush spa. Enjoy afternoon siestas and see wildlife gather at the waterhole while you lounge poolside.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 10 -->
+        <div class="box">
+            <div class="image">
+                <img src="retret.jpg" alt="4-Day Group Kruger Retreat">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>4-Day Group Kruger Retreat</h3>
+                <div class="price"> Rp 18.200.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>This 4-day getaway to Kruger is ideal for a family or group of friends wanting to unwind, relax and get away from it all while enjoying excellent food, scenery and activities. Set out and explore the regions famous attractions like the awe-inspiring Panorama Route and Kruger National Park. Embark on a private guided game drive through the Kruger National Park. </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Trip 11 -->
+        <div class="box">
+            <div class="image">
+                <img src="culture.jpg" alt="5-Day Wildlife & Culture Safari">
+                <div class="icons">
+                    <a href="#" class="fas fa-bookmark"></a>
+                    <a href="#trips" class="cart-btn">Add to Wishlist</a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>5-Day Wildlife & Culture Safari</h3>
+                <div class="price"> Rp 28.500.000 </div>
+                
+                <details class="trip-details">
+                    <summary class="details-btn">View Trip Details</summary>
+                    <div class="details-content">
+                        <p>Spend 5 days on a Kruger Park safari that combines the diverse wildlife and traditional culture of the Kruger Park region. Interact with African elephants, share traditional meals and experience the authentic Shangaan culture. Embark on thrilling open safari vehicle game drives into the bushveld in search of African Big 5 wildlife.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- trips section ends -->
+
+    <!-- footer section mulai -->
+
+    <footer id="about-creator" class="footer">
+    <div class="creator-info">
+        <h3>Website Created By</h3>
+        <p>Agnes Cintantya</p>
+        <p><strong>IX-2 / 01 SMP Santa Ursula Jakarta</p>
+    </div>
+</footer>
+
+<!-- footer section selesai -->
+
+
+
+
+</body>
+
+</html>

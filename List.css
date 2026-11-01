@@ -1,0 +1,114 @@
+.header {
+    background-color: transparent; 
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header img.header-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+}
+
+ol{
+    background-color:beige;
+    border: 2px solid rgb(255, 172, 39);
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding: 15px 30px;
+    text-align: justify;
+    margin: 10px;
+}
+
+li.b{
+    background-color:rgb(255, 255, 132);
+    border: 2px solid rgb(199, 172, 40);
+    
+}
+li.stroberi{
+    background-color:rgb(12, 39, 105) ;
+    color:blanchedalmond;
+    border:2px solid rgb(88, 167, 4);
+}
+ol li{
+    margin: 6px 0;
+    padding: 0 10px;
+}
+ol li:hover{
+    background-color: #aeb9ff;
+}
+li.stroberi:hover{
+    background-color: pink;
+}
+ul{
+    background-color:lightgoldenrodyellow;
+    border: 2px solid rgb(78, 219, 219);
+    list-style-type:disc;
+    list-style-position: inside;
+    padding: 15px 30px;
+    text-align: justify;
+    margin: 10px;
+}
+
+li.hoverli{
+    background-color:rgb(144, 255, 244);
+    border: 2px solid rgb(28, 126, 156);
+}
+ul li{
+    margin: 6px 0;
+}
+ul li:hover{
+    background-color: #effe7e;
+}
+
+
+ul.i{
+    background-color:lightgoldenrodyellow;
+    border: 2px solid rgb(251, 255, 0);
+    list-style-type:square;
+    list-style-position: inside;
+    padding: 15px 30px;
+    text-align: justify;
+    margin: 10px;
+}
+li.ic{
+    background-color:rgb(255, 255, 132);
+    border: 2px solid orange;
+}
+ul li.ic:hover{
+    background-color:rgb(255, 172, 39);
+}
+
+ul.ic {
+    list-style-position: inside;
+    padding: 10px 10px;
+}
+
+li.ic svg, li.ic i {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+li.ic span {
+    display: inline-block;
+}
+
+li.ic {
+    background-color: rgb(255, 255, 132);
+    border: 2px solid rgb(176, 176, 13);
+    display: flex;
+    align-items: center; 
+    gap: 15px;           
+    padding: 5px 5px;  
+    margin-bottom: 10px;
+}
+
+
+li.ic p {
+    margin: 0;
+    display: inline;
+}
